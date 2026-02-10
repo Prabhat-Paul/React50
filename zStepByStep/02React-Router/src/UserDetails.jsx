@@ -9,7 +9,7 @@ const UserDetails = () => {
     <div style={{paddingLeft:'15px'}}>
       <h1>User Details Page</h1>
       <h1>User Id :{id}</h1>
-      <h3><Link to='/UsersList'>Back  </Link></h3>
+      <h3><Link to='/Users'>Back  </Link></h3>
     </div>
   )
 }

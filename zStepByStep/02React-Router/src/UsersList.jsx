@@ -23,7 +23,7 @@ const UsersList = () => {
       {
         userData.map(({id,name})=>(
           <div > 
-            <h3 ><Link className='link' to={'/UsersList/'+id}>{name}</Link></h3>
+            <h3 ><Link className='link' to={'/Users/'+id+'/'+name}>{name}</Link></h3>
           </div>
         ))
       }

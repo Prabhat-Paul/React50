@@ -1,29 +1,32 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router'
+import { NavLink, Outlet } from 'react-router'
 import './Navbar.css'
 const NavBar = () => {
   return (
     <>
       <div className='header'>
         <div>
-          <Link className='link' to='/'><h1>Logo</h1></Link>
+          <NavLink className='link' to='/'><h1>Logo</h1></NavLink>
         </div>
         <div>
           <ul>
             <li>
-              <Link className='link' to='/'>Home</Link>
+              <NavLink className='link' to='/'>Home</NavLink>
             </li>
             <li>
-              <Link className='link' to='user/Contact'>Contact</Link>
+              <NavLink className='link' to='user/Contact'>Contact</NavLink>
             </li>
             <li>
-              <Link className='link' to='user/About'>About</Link>
+              <NavLink className='link' to='user/About'>About</NavLink>
             </li>
             <li>
-              <Link className='link' to='/College'>College</Link>
+              <NavLink className='link' to='/College'>College</NavLink>
             </li>
             <li>
-              <Link className='link' to='/UsersList'>Users</Link>
+              <NavLink className='link' to='/Users' end>Users</NavLink>
+            </li>
+            <li>
+              <NavLink className='link' to='/Users/List'>List</NavLink>
             </li>
           </ul>
         </div>       

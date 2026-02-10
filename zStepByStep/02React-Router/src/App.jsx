@@ -21,8 +21,9 @@ const App = () => {
 
         <Route element={<NavBar/>}>
           <Route path='/' element={<Home/>}/>
-          <Route path='/UsersList' element={<UsersList/>}/>
-          <Route path='/UsersList/:id' element={<UserDetails/>}/>
+          <Route path='/Users/list?' element={<UsersList/>}/>
+          {/* <Route path='/Users/List' element={<UsersList/>}/> */}
+          <Route path='/Users/:id/:name?' element={<UserDetails/>}/>
 
           <Route path='user'> 
             <Route path='/user/About' element={<About/>}/>
