@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "Prabhat",
+      "age": "23",
+      "email": "prabhat@gmail.com"
+    },
+    {
+      "name": "Paul",
+      "age": "25",
+      "email": "adf@gmail.com"
+    },
+    {
+      "name": "Abal",
+      "age": "23",
+      "email": "asdf@gmail.com"
+    },
+    {
+      "name": "Koru",
+      "age": "23",
+      "email": "ada@gmail.com"
+    },
+    {
+      "name": "Koli",
+      "age": "29",
+      "email": "rtyt@gmail.com"
+    },
+    {
+      "name": "Chiklu",
+      "age": "88",
+      "email": "jko@gmail.com"
+    }
+  ]
+}
