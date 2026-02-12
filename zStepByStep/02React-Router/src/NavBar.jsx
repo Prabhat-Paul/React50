@@ -6,12 +6,12 @@ const NavBar = () => {
     <>
       <div className='header'>
         <div>
-          <NavLink className='link' to='/'><h1>Logo</h1></NavLink>
+          <NavLink className={({isActive})=>isActive?'custom-active-link':'link'}  to='/'><h1>Logo</h1></NavLink>
         </div>
         <div>
           <ul>
             <li>
-              <NavLink className='link' to='/'>Home</NavLink>
+              <NavLink className='link' to='/' end>Home</NavLink>
             </li>
             <li>
               <NavLink className='link' to='user/Contact'>Contact</NavLink>

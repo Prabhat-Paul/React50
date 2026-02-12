@@ -51,7 +51,11 @@ body{
   height: 150px;
   
 }
-
+.custom-active-link{
+  text-decoration: none;
+  font-weight: 900;
+  color: brown;
+}
 .active{
   font-weight: 800;
   color: brown;
