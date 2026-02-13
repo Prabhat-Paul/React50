@@ -1,32 +1,33 @@
 import React, { useEffect, useState } from "react";
-
+import UserList from "./UserList";
+import { Link,NavLink, Route, Routes } from "react-router";
+import UserAdd from "./UserAdd";
+import './index.css'
 const App = () => {
-  const [user, setUser] = useState([]);
-  useEffect(() => {
-    getUserdata();
-  }, []);
-  async function getUserdata() {
-    const url = "https://dummyjson.com/users";
-    let res = await fetch(url);
-    res = await res.json();
-    // console.log(res);
-    setUser(res.users);
-  }
+  
   return (
     <>
-      <h2> User name fetch</h2>
-      
-        {user &&
-          user.map(({ firstName, id, lastName, age }) => (
-            <div key={id}>
-            <li style={{border:'1px solid',padding:'5px'}} >
-            {id} : {firstName} {lastName} &nbsp;   Age:{age}
-            </li>
-  
-            <br/>
-            </div>
-          ))}
-      
+      <h2>Routes for Integrated JSON server API </h2>
+      <div style={{
+          display:'flex',
+          justifyContent:'space-between',
+          marginBottom:'20px',
+          backgroundColor:'royalblue',
+          padding:'10px',
+          width:'650px',
+          borderRadius:'10px',
+
+        }} className="list-container">
+        <NavLink style={{marginRight:'20px',textDecoration:'none',color:'white',cursor:'pointer',textShadow:'2px 2px 2px black',padding:"5px"}} to='/'>List</NavLink>
+
+        <NavLink style={{marginRight:'20px',textDecoration:'none',color:'white',cursor:'pointer',textShadow:'2px 2px 2px black',padding:"5px"}} to='/add'>Add User</NavLink>
+      </div>
+      <Routes>
+        <Route path="/" element={<UserList/>}/>
+        <Route path="/add" element={<UserAdd/>}/>
+      </Routes>
+      {/* <UserList/> */}
+      {/* <UserAdd/> */}
     </>
   );
 };

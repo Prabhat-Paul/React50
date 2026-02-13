@@ -1,0 +1,21 @@
+.active{
+  background-color:rgb(194, 78, 78);
+  border: 1px solid rgb(255, 251, 251);
+  padding: 5px;
+}
+.userList{
+  display: flex;
+  width: 550px;
+  justify-content: start;
+  border: 1px solid royalblue;
+  padding: 10px;
+  background-color: rgb(221, 228, 247);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+button{
+  background-color: rgb(194,78,78);
+  border-radius: 5px;
+  color: white;
+}
