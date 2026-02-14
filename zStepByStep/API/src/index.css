@@ -3,19 +3,46 @@
   border: 1px solid rgb(255, 251, 251);
   padding: 5px;
 }
+.list-container{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(194, 78, 78);
+  padding: 10px;
+}
 .userList{
   display: flex;
-  width: 550px;
-  justify-content: start;
+  width: 650px;
+  justify-content: space-between;
   border: 1px solid royalblue;
   padding: 10px;
   background-color: rgb(221, 228, 247);
   border-radius: 10px;
   font-size: 20px;
+  list-style-type:none;
+  margin: 0px;
 }
 
 button{
   background-color: rgb(194,78,78);
   border-radius: 5px;
   color: white;
+}
+
+.delete-btn{
+  /* background-color: rgb(194,78,78); */
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.delete-btn:active{
+  background-color: rgb(56, 2, 2);
+}
+.edit-btn{
+  background-color: rgb(77, 133, 57);
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
 }

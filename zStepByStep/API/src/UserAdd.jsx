@@ -6,20 +6,28 @@ const UserAdd = () => {
   const [email,setEmail]=useState('')
   
   const createUser = async()=>{
-    console.log(name,age,email)
+    
+    // console.log(name,age,email)
     const url="http://localhost:3000/users"
-    let response = await fetch(url,{
-      method:'POST',
-      headers: {
-      "Content-Type": "application/json"
-    },
-      body:JSON.stringify({ name, age, email })
-    })
-    response= await response.json()
-
-    if(response){
-      alert("User Added")
+    if(name && age && email){
+      let res = await fetch(url,{
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json'
+        },
+        body:JSON.stringify({name,age,email})
+      })
+      res = await res.json();
+      if(res){
+        alert("User Added")
+        setName('')
+        setAge('')
+        setEmail('')
+      } else{
+        alert("Error adding user")
+      }
     }
+      
   }
 
   return (

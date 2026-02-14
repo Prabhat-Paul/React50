@@ -1,22 +1,16 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "Prabhat",
-      "age": "23",
-      "email": "prabhat@gmail.com"
+      "name": "John",
+      "age": "30",
+      "email": "john@test.com",
+      "id": "1"
     },
     {
-      "id": "2",
-      "name": "Paul",
-      "age": "25",
-      "email": "adf@gmail.com"
-    },
-    {
-      "id": "3",
-      "name": "Abal",
+      "name": "Prabhat Paul",
       "age": "23",
-      "email": "asdf@gmail.com"
+      "email": "prabhatpaul935@gmail.com",
+      "id": "2"
     },
     {
       "id": "4",
@@ -37,22 +31,34 @@
       "email": "jko@gmail.com"
     },
     {
-      "name": "Srijani",
+      "name": "Srijani Sarkar",
       "age": "21",
-      "email": "srijnai@gmail.com",
+      "email": "srijnai@gmail.in",
       "id": "orx1P13"
-    },
-    {
-      "name": "New Prabht",
-      "age": "23",
-      "email": "prabhatpaul9351@gmail.com",
-      "id": "0gs_WMK"
     },
     {
       "name": "Lee",
       "age": "67",
       "email": "lee@test.com",
       "id": "g5YB6Nd"
+    },
+    {
+      "name": "Luffy",
+      "age": "20",
+      "email": "Luffy@mail.com",
+      "id": "ME3x_EV"
+    },
+    {
+      "name": "Zoro",
+      "age": "29",
+      "email": "Zoro@mail.com",
+      "id": "Uy4-4ug"
+    },
+    {
+      "name": "Vinsmoke Sanji",
+      "age": "32",
+      "email": "Sanji@gmail.comNami",
+      "id": "ylsv9ds"
     }
   ]
 }
