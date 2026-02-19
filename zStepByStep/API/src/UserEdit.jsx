@@ -36,9 +36,7 @@ const UserEdit = () => {
     if(res){
       alert("User Updated Successfully")
       navigate('/')
-    } else{
-      alert("Error updating user")
-    }
+    } 
 
   }
 
