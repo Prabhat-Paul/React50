@@ -54,16 +54,16 @@ const Form = () => {
     }
     
     setTimeout(()=>{
-      setUserName('')
+      // setUserName('')
       setErrorUserName('')
-      setEmail('')
+      // setEmail('')
       setErrorEmail('')
-      setPass('')
+      // setPass('')
       setErrorPass('')
-      setConfirmPass('')
+      // setConfirmPass('')
       setErrorConfirmPass('')
     },5000)
-
+     
   }
   
 
